@@ -1,0 +1,17 @@
+{
+    // おすすめの拡張機能を書いてますが、なくても良いです
+    "recommendations": [
+      "CoenraadS.bracket-pair-colorizer-2", // 括弧の色分け
+      "dbaeumer.vscode-eslint", // ESLint
+      "donjayamanne.githistory", // Gitの履歴
+      "esbenp.prettier-vscode", // コードフォーマッター
+      "msjsdiag.debugger-for-chrome", // Chromeのデバッグ
+      "oderwat.indent-rainbow", // インデントの色分け
+      "stylelint.vscode-stylelint", // CSSのlint
+      "VisualStudioExptTeam.vscodeintellicode", // AIによるコード補完
+      "PKief.material-icon-theme", // アイコンテーマ設定
+      "wix.vscode-import-cost" // インポートファイルのサイズ警告
+    ],
+    // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+    "unwantedRecommendations": []
+}
