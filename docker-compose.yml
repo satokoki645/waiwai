@@ -1,0 +1,41 @@
+version: "3.9"
+
+services:
+  next:
+    container_name: waiwai_next
+    build:
+      context: ./Docker/web
+    ports:
+      - 3000:3000
+    volumes:
+      - ./web:/var/www/web
+    stdin_open: true
+    tty: true
+
+  python:
+    container_name: waiwai_npython
+    build: ./Docker/python
+    command: "python -m http.server && pip install --upgrade pip $$ pip install poetry"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./api:/var/www/api
+    working_dir: /var/www/api
+
+  postgresql:
+    container_name: waiwai_postgresql
+    build: ./Docker/postgresql
+    ports:
+      - "5432:5432"
+    volumes:
+      - waiwai-db-volume:/var/lib/postgresql/data
+    environment:
+      TZ: "Asia/Tokyo"
+      POSTGRES_DB: waiwai_db
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: user
+    hostname: postgres
+    restart: always
+
+volumes:
+  waiwai-db-volume:
