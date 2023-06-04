@@ -12,6 +12,17 @@ services:
     stdin_open: true
     tty: true
 
+  storybook:
+    container_name: storybook
+    build:
+      context: ./Docker/storybook
+    ports:
+      - 6006:6006
+    volumes:
+      - ./web/.storybook:/var/www/.storybook
+    stdin_open: true
+    tty: true
+
   python:
     container_name: waiwai_python
     build: ./Docker/python
@@ -38,5 +49,6 @@ services:
 
 volumes:
   waiwai-web-volume:
+  waiwai-storybook-volume:
   waiwai-python-volume:
   waiwai-db-volume:
