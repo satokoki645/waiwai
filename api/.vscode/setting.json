@@ -16,5 +16,8 @@
 	"files.trimTrailingWhitespace": true,
 	"npm.packageManager": "npm",
 	"typescript.enablePromptUseWorkspaceTsdk": true,
-	"cSpell.words": ["hoge", "fuga", "piyo", "moge", "hage", "hige"]
+	"cSpell.words": ["hoge", "fuga", "piyo", "moge", "hage", "hige"],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    }
 }
