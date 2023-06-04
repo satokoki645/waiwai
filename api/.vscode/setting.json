@@ -1,0 +1,20 @@
+{
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.fixAll.stylelint": true,
+		"source.addMissingImports": true
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"python.pythonPath": "/usr/bin/python3",
+	"python.formatting.provider": "black",
+	"editor.lineNumbers": "on",
+	"editor.rulers": [80],
+	"editor.wordWrap": "on",
+	"eslint.packageManager": "yarn",
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
+	"npm.packageManager": "yarn",
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"cSpell.words": ["hoge", "fuga", "piyo", "moge", "hage", "hige"]
+}
