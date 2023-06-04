@@ -13,7 +13,7 @@ services:
     tty: true
 
   storybook:
-    container_name: waiwai_storybook
+    container_name: storybook
     build:
       context: ./Docker/storybook
     ports:
@@ -49,5 +49,6 @@ services:
 
 volumes:
   waiwai-web-volume:
+  waiwai-storybook-volume:
   waiwai-python-volume:
   waiwai-db-volume:

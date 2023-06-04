@@ -21,7 +21,20 @@ docker compose up -d --build
 
 docker compose exec next sh
 
-yarn install
+npm install
 
-yarn dev
+npm dev
+```
+
+storybook
+```
+cd waiwai
+
+docker compose up -d --build
+
+docker compose exec storybook sh
+
+npm install
+
+npm run build-storybook
 ```
