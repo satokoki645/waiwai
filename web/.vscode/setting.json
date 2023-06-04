@@ -28,10 +28,10 @@
   "editor.lineNumbers": "on",
   "editor.rulers": [80],
   "editor.wordWrap": "on",
-  "eslint.packageManager": "yarn",
+  "eslint.packageManager": "npm",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "npm.packageManager": "yarn",
+  "npm.packageManager": "npm",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "cSpell.words": ["hoge", "fuga", "piyo", "moge", "hage", "hige"]
 }
