@@ -10,7 +10,7 @@ docker compose up -d --build
 
 docker compose exec python sh
 
-uvicorn main:app --host 0.0.0.0 --port 8080 --reload
+uvicorn main:app --host 0.0.0.0 --port 8080
 ```
 
 frontend
@@ -37,4 +37,7 @@ docker compose exec storybook sh
 npm install
 
 npm run build-storybook
-``
+``````
+
+testtest
+testtest

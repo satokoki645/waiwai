@@ -1,4 +1,4 @@
-FROM --platform=linux/x86_64 python:3.11.3-alpine3.18
+FROM python:3.11.3-alpine3.18
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
