@@ -7,7 +7,7 @@ router = APIRouter()
 def login():
     return {"message": "user"}
 
-@router.post("/api/login/",tags=['login'])
+@router.post("/api/logout/",tags=['login'])
 def logout(user:User):
     return {"message": user}
 
