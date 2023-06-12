@@ -1,7 +1,8 @@
-from fastapi import FastAPI
+from fastapi import FastAPI,Depends
 from src.routes import user,team,product,product_category,category,auth
-from models import Base
-from database import engine
+from database import Base,engine,get_db
+from sqlalchemy.orm import Session
+
 
 app = FastAPI()
 
