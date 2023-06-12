@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from ..scemas import Team
+from ..schemas import Team
 
 router = APIRouter()
 

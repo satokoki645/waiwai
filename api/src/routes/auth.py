@@ -1,13 +1,13 @@
 from fastapi import APIRouter
-from ..scemas import User
+from ..schemas import User
 
 router = APIRouter()
 
-@router.get("/api/login/",tags=['login'])
+@router.put("/api/login/",tags=['login'])
 def login():
     return {"message": "user"}
 
-@router.post("/api/login/",tags=['login'])
+@router.delete("/api/logout/",tags=['login'])
 def logout(user:User):
     return {"message": user}
 
