@@ -2,4 +2,4 @@
 FROM node:19-alpine3.16
 
 # 作業ディレクトリの設定
-WORKDIR /var/www/web/app
+WORKDIR /var/www/web

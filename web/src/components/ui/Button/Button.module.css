@@ -1,0 +1,29 @@
+/** ボタンのスタイリング */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 11px;
+  font-size: var(--text-md);
+  font-weight: bold;
+  color: var(--button-text-color);
+  white-space: nowrap;
+  white-space: pre-wrap;
+  cursor: pointer;
+  user-select: none;
+  background: var(--button-background);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-sm);
+  transition: 0.1s;
+
+  --button-text-color: var(--default-btn-color);
+  --button-background: var(--background);
+}
+
+.caption {
+  margin-left: 4px;
+  font-size: var(--text-sm);
+  font-weight: normal;
+  color: var(--secondary);
+}

@@ -19,7 +19,7 @@ services:
     ports:
       - 6006:6006
     volumes:
-      - ./web/.storybook:/var/www/.storybook
+      - ./web:/var/www/web
     stdin_open: true
     tty: true
 
