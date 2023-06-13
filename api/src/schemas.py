@@ -3,13 +3,20 @@ from typing import List,Optional
 
 class User(BaseModel):
     id :int
-    user:str
+    team_id:str
+    user_name:str
+    password:str
+
+class ShowUser(BaseModel):
+    team_id:str
     user_name:str
     password:str
 
 class Team(BaseModel):
     id :int
-    user_id:int
+    team_name:str
+
+class ShowTeam(BaseModel):
     team_name:str
 
 class Product(BaseModel):

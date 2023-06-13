@@ -12,10 +12,10 @@ sessionLocal = sessionmaker(bind=engine,autocommit=False,autoflush=False)
 
 Base =declarative_base()
 
-# def get_db() -> Session:
+def get_db() -> Session:
 
-#     try:
-#         db =sessionLocal()
-#         yield db
-#     finally:
-#         db.close()
+    try:
+        db =sessionLocal()
+        yield db
+    finally:
+        db.close()
