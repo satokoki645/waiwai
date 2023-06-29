@@ -11,8 +11,9 @@ RUN pip install poetry && \
 
 RUN poetry init
 
-RUN /bin/sh -c poetry add fastapi uvicorn sqlalchemy alembic && \
+RUN /bin/sh -c poetry add fastapi uvicorn sqlalchemy alembic  psycopg2-binary && \
     /bin/sh -c poetry install
+
 
 WORKDIR /usr/src/python/api
 
