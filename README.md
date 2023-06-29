@@ -14,6 +14,7 @@ docker compose exec python sh
 
 uvicorn main:app --host 0.0.0.0 --port 8080
 ```
+docker-compose exec python poetry run python -m migrate_db
 
 frontend
 ```
