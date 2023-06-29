@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from ..schemas import category
+from src.schemas.schemas import category
 
 router = APIRouter()
 

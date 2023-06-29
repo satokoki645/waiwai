@@ -1,5 +1,5 @@
 from fastapi import APIRouter,Depends,Response
-from ..schemas import User,ShowUser
+from src.schemas.schemas import User,ShowUser
 from sqlalchemy.orm import Session
 import models
 from database import get_db

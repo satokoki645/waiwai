@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from ..schemas import Product
+from src.schemas.schemas import Product
 from sqlalchemy.orm import Session
 import models
 from database import get_db

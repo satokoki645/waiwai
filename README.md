@@ -12,8 +12,12 @@ docker compose up -d --build
 
 docker compose exec python sh
 
-uvicorn main:app --host 0.0.0.0 --port 8080
+uvicorn main:app --reload --host 0.0.0.0 --port 8080
 ```
+上記エラー時
+①poetry install
+②poetry add psycopg2-binary
+
 docker-compose exec python poetry run python -m migrate_db
 
 frontend
