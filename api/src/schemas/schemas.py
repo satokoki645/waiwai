@@ -16,7 +16,7 @@ class Team(BaseModel):
     id :int
     team_name:str
 
-class ShowTeam(BaseModel):
+class CreateTeam(BaseModel):
     team_name:str
 
 class Product(BaseModel):
